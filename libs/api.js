@@ -12,3 +12,8 @@ export const getPosts = async req => {
   );
   return posts || [];
 };
+
+export const getPostBySlug = async (req, slug) => {
+  const post = await Client(req).getByUID("posts", slug);
+  return post;
+};
