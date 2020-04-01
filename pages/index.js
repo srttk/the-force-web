@@ -21,7 +21,7 @@ class Index extends Component {
                 <a>{RichText.asText(post.data.title)}</a>
               </Link>
             </h1>
-            <p className="text-gray-800 font-light">
+            <p className="text-gray-800 font-light text-lg">
               {RichText.asText(post.data.content)}
             </p>
           </div>

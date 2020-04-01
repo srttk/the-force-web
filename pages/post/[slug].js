@@ -10,7 +10,7 @@ const Post = ({ slug, post }) => {
         <h1 className="text-2xl text-indigo-600 font-thin hover:text-indigo-900">
           {RichText.asText(post.data.title)}
         </h1>
-        <p className="text-gray-800 font-light">
+        <p className="text-gray-800 font-light text-lg">
           {RichText.asText(post.data.content)}
         </p>
       </div>

@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "framer-motion": "^1.10.3",
     "next": "^9.3.3",
     "prismic-dom": "^2.1.0",
     "prismic-javascript": "^2.7.0",
