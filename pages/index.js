@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Link from "next/link";
 import { RichText } from "prismic-reactjs";
+import Layout from "../components/Layout";
 import { getPosts } from "../libs/api";
 
 class Index extends Component {
@@ -12,19 +13,20 @@ class Index extends Component {
     const { posts = [] } = this.props;
 
     return (
-      <div>
-        <h1>f=ma</h1>
+      <Layout>
         {posts.results.map(post => (
-          <div key={post.id}>
-            <h1>
+          <div className="px-2 py-2 mt-4 shadow" key={post.id}>
+            <h1 className="text-2xl text-indigo-600 font-thin hover:text-indigo-700 hover:underline">
               <Link href="/post/[slug]" as={`/post/${post.uid}`}>
                 <a>{RichText.asText(post.data.title)}</a>
               </Link>
             </h1>
-            <p>{RichText.asText(post.data.content)}</p>
+            <p className="text-gray-800 font-light">
+              {RichText.asText(post.data.content)}
+            </p>
           </div>
         ))}
-      </div>
+      </Layout>
     );
   }
 }
