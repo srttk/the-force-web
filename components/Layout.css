@@ -1,0 +1,10 @@
+.force-container {
+    @apply max-w-screen-lg mx-auto bg-white;
+}
+
+.app-name {
+    @apply text-indigo-600 text-3xl;
+}
+.app-name:hover{ 
+    @apply text-indigo-700 underline;
+}

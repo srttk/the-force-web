@@ -1,0 +1,14 @@
+.post-card {
+    @apply px-2 py-2 mt-4 shadow;
+}
+.post-card-title {
+    @apply text-2xl text-indigo-600 font-thin;
+}
+
+.post-card-title:hover {
+    @apply text-indigo-700 underline;
+}
+
+.post-card-content {
+    @apply text-gray-800 font-light text-lg;
+}
