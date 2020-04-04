@@ -1,5 +1,5 @@
 .force-container {
-    @apply max-w-screen-lg mx-auto bg-white;
+    @apply max-w-screen-lg mx-auto bg-white flex flex-col h-full;
 }
 
 .app-name {
@@ -8,3 +8,13 @@
 .app-name:hover{ 
     @apply text-indigo-700 underline;
 }
+footer.footer {
+    @apply text-gray-500 text-sm py-3 text-center;
+}
+a.link, a.link:link, a.link:visited {
+    @apply text-sm text-indigo-600;
+}
+
+a.link:hover, a.link:link:hover, a.link:visited:hover {
+    @apply underline;
+} 

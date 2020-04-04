@@ -11,18 +11,40 @@ const Layout = ({ children }) => {
           <a>the.force</a>
         </Link>
       </h1>
-      <motion.div
+      <motion.main
+        className="flex-1"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -15 }}
         transition={{
           duration: 0.3,
           staggerChildren: 0.5,
-          when: "beforeChildren"
+          when: "beforeChildren",
         }}
       >
         {children}
-      </motion.div>
+      </motion.main>
+
+      <footer className="footer">
+        Build with ❤️ and{" "}
+        <a
+          className="link"
+          href="https://en.wikipedia.org/wiki/The_Force"
+          target="_blank"
+        >
+          Force
+        </a>{" "}
+        by{" "}
+        <span>
+          <a
+            className="link"
+            href="https://github.com/saratonite"
+            target="_blank"
+          >
+            Sarath
+          </a>
+        </span>
+      </footer>
     </div>
   );
 };
