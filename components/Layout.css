@@ -1,5 +1,5 @@
 .force-container {
-    @apply max-w-screen-lg mx-auto bg-white flex flex-col h-full;
+    @apply max-w-screen-lg mx-auto bg-white flex flex-col h-full antialiased px-3;
 }
 
 .app-name {
@@ -9,7 +9,7 @@
     @apply text-indigo-700 underline;
 }
 footer.footer {
-    @apply text-gray-500 text-sm py-3 text-center;
+    @apply text-gray-500 text-sm p-3 text-center
 }
 a.link, a.link:link, a.link:visited {
     @apply text-sm text-indigo-600;
