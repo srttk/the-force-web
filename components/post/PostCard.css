@@ -1,9 +1,13 @@
 
 .post-card {
-    @apply px-2 py-2 mt-4 shadow;
+    @apply px-2 py-2 mt-6 shadow bg-white rounded-lg;
+}
+
+.post-card:hover {
+    @apply shadow-md;
 }
 .post-card-title {
-    @apply text-2xl text-indigo-600 font-thin;
+    @apply text-2xl text-indigo-600 font-normal mb-2;
 }
 
 .post-card-title:hover {

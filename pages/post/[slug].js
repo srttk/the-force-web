@@ -3,22 +3,23 @@ import { RichText } from "prismic-reactjs";
 import { getPostBySlug } from "../../libs/api";
 import Layout from "../../components/Layout";
 import { motion } from "framer-motion";
+import "../../components/post/PostCard.css";
 
 const Post = ({ slug, post }) => {
   return (
     <Layout>
-      <div className="px-2 py-2 mt-4 shadow">
+      <div className="post-card">
         <motion.h1
           initial={{ y: -20 }}
           animate={{ y: 0 }}
-          className="text-2xl text-indigo-600 font-thin hover:text-indigo-900"
+          className="post-card-title"
         >
           {RichText.asText(post.data.title)}
         </motion.h1>
         <motion.p
-          initial={{ y: 20 }}
-          animate={{ y: 0 }}
-          className="text-gray-800 font-light text-lg"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          className="post-card-content"
         >
           {RichText.asText(post.data.content)}
         </motion.p>

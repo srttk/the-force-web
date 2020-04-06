@@ -65,6 +65,7 @@ const Layout = ({ children }) => {
         #__next {
           height: 100%;
           position: relative;
+          background-color: #e2e8f0;
         }
         /* Make clicks pass-through */
         #nprogress {

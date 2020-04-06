@@ -1,5 +1,5 @@
 .force-container {
-    @apply max-w-screen-lg mx-auto bg-white flex flex-col h-full antialiased px-3;
+    @apply max-w-screen-lg mx-auto flex flex-col h-full antialiased px-3 bg-gray-300;
 }
 
 .app-name {
