@@ -2,6 +2,11 @@
     @apply max-w-screen-lg mx-auto flex flex-col h-full antialiased px-3 bg-gray-300;
 }
 
+/* Header */
+.app-header {
+    @apply flex items-center justify-between;
+}
+
 .app-name {
     @apply text-indigo-600 text-3xl;
 }

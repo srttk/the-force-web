@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import NProgress from "nprogress";
 import "../styles/index.css";
 import "./Layout.css";
+import { ButtonLink } from "../components/ui/Button";
 
 const Layout = ({ children }) => {
   useEffect(() => {
@@ -20,11 +21,29 @@ const Layout = ({ children }) => {
   }, []);
   return (
     <div className="force-container">
-      <h1 className="app-name">
-        <Link href="/">
-          <a>the.force</a>
-        </Link>
-      </h1>
+      <header className="app-header">
+        <h1 className="app-name">
+          <Link href="/">
+            <a>the.force</a>
+          </Link>
+        </h1>
+        <nav className="flex-grow flex px-4">
+          <ButtonLink href="/">Posts</ButtonLink>
+          <ButtonLink href="/" color="teal">
+            Quotes
+          </ButtonLink>
+          <ButtonLink href="/" color="yellow">
+            Books
+          </ButtonLink>
+          <ButtonLink href="/" color="red">
+            Movies
+          </ButtonLink>
+        </nav>
+        <div>
+          <ButtonLink href="/">JOIN THE FORCE</ButtonLink>
+        </div>
+      </header>
+
       <motion.main
         className="flex-1"
         initial={{ opacity: 0, y: 10 }}

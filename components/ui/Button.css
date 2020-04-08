@@ -1,0 +1,49 @@
+.f-btn {
+  @apply inline-block px-3 py-1 text-sm text-white shadow rounded-full mr-1 cursor-pointer;
+}
+.f-btn:last-child {
+  @apply mr-0;
+}
+.f-btn:hover {
+  @apply shadow-md;
+}
+
+
+/*
+Color
+*/
+
+.b-primary {
+  @apply bg-indigo-500;
+}
+.b-primary:hover {
+  @apply bg-indigo-600;
+}
+
+.b-teal {
+  @apply bg-teal-400;
+}
+
+.b-teal:hover {
+  @apply bg-teal-500;
+}
+.b-yellow {
+  @apply bg-yellow-400;
+}
+
+.b-yellow:hover {
+  @apply bg-yellow-500;
+}
+
+.b-red {
+  @apply bg-red-400;
+}
+
+.b-red:hover {
+  @apply bg-red-500;
+}
+
+
+/*
+Size
+*/
