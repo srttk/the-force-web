@@ -20,7 +20,12 @@ const Layout = ({ children }) => {
     return function () {};
   }, []);
   return (
-    <div className="force-container">
+    <motion.div
+      className="force-container"
+      initial="initial"
+      animate="animate"
+      exit={{ opacity: 0 }}
+    >
       <header className="app-header">
         <h1 className="app-name">
           <Link href="/">
@@ -39,24 +44,12 @@ const Layout = ({ children }) => {
             Movies
           </ButtonLink>
         </nav>
-        <div>
+        <div className="header-right-side">
           <ButtonLink href="/">JOIN THE FORCE</ButtonLink>
         </div>
       </header>
 
-      <motion.main
-        className="flex-1"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -15 }}
-        transition={{
-          duration: 0.3,
-          staggerChildren: 0.5,
-          when: "beforeChildren",
-        }}
-      >
-        {children}
-      </motion.main>
+      <main className="flex-1">{children}</main>
 
       <footer className="footer">
         Build with ❤️ and{" "}
@@ -168,7 +161,7 @@ const Layout = ({ children }) => {
           }
         }
       `}</style>
-    </div>
+    </motion.div>
   );
 };
 

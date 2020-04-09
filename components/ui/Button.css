@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .f-btn {
   @apply inline-block px-3 py-1 text-sm text-white shadow rounded-full mr-1 cursor-pointer;
 }
@@ -47,3 +48,5 @@ Color
 /*
 Size
 */
+
+/* purgecss end ignore */

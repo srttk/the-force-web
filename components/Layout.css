@@ -4,7 +4,22 @@
 
 /* Header */
 .app-header {
-    @apply flex items-center justify-between;
+    @apply flex flex-col items-center justify-between;
+}
+
+.header-right-side{
+    @apply mt-2;
+}
+
+@screen sm {
+    .app-header {
+        @apply flex-row;
+    }
+
+    .header-right-side{
+        @apply mt-0;
+    }
+   
 }
 
 .app-name {
