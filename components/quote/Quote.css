@@ -1,0 +1,11 @@
+.quote-card {
+    @apply bg-white border-l-8 border-teal-300 px-3 py-4 mt-6 shadow;
+}
+
+.quote-text {
+    @apply text-2xl font-light text-gray-600 break-words;
+}
+
+.quote-author {
+    @apply text-right text-gray-700;
+}

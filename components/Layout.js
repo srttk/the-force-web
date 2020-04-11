@@ -20,12 +20,7 @@ const Layout = ({ children }) => {
     return function () {};
   }, []);
   return (
-    <motion.div
-      className="force-container"
-      initial="initial"
-      animate="animate"
-      exit={{ opacity: 0 }}
-    >
+    <div className="force-container">
       <header className="app-header">
         <h1 className="app-name">
           <Link href="/">
@@ -34,7 +29,7 @@ const Layout = ({ children }) => {
         </h1>
         <nav className="flex-grow flex px-4">
           <ButtonLink href="/">Posts</ButtonLink>
-          <ButtonLink href="/" color="teal">
+          <ButtonLink href="/quotes" color="teal">
             Quotes
           </ButtonLink>
           <ButtonLink href="/" color="yellow">
@@ -49,7 +44,14 @@ const Layout = ({ children }) => {
         </div>
       </header>
 
-      <main className="flex-1">{children}</main>
+      <motion.main
+        initial="initial"
+        animate="animate"
+        exit={{ opacity: 0 }}
+        className="flex-1"
+      >
+        {children}
+      </motion.main>
 
       <footer className="footer">
         Build with ❤️ and{" "}
@@ -161,7 +163,7 @@ const Layout = ({ children }) => {
           }
         }
       `}</style>
-    </motion.div>
+    </div>
   );
 };
 
